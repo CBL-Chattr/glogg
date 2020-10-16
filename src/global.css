@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+:root {
+  --active-color: #f86600;
+  --primary-color: #000;
+  --secondary-color: #656565;
 }
 
 html {
@@ -11,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -21,5 +26,5 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
