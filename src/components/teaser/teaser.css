@@ -1,0 +1,16 @@
+.teaserCard {
+  background-image: url("../../assets/teaser2.png");
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 2rem;
+
+  /* margin: 2rem; */
+}
+.teaserCard > h1 {
+  width: 189px;
+}
