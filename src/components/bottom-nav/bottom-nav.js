@@ -1,6 +1,6 @@
 import createElement from "../../utils/element.js";
-import from "./bottom-nav.css";
+import "./bottom-nav.css";
 
-export const BottomNav = () => {
-    return
-}
+export const bottomNav = () => {
+  return;
+};

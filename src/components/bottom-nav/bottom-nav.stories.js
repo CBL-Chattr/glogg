@@ -1,7 +1,7 @@
-import BottomNav from "./bottom-nav.js";
+import bottomNav from "./bottom-nav.js";
 
 export default {
   title: "Components/Bottom Nav",
 };
 
-export const nav = () => BottomNav;
+export const nav = () => bottomNav;
