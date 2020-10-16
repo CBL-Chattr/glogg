@@ -22,3 +22,7 @@
 button {
   background: none;
 }
+
+.bottomNav__home--inactive {
+  background-color: #fff;
+}

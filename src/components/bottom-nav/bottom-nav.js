@@ -36,10 +36,15 @@ export const bottomNav = () => {
         className: "bottomNav__home",
         children: [homeElement],
         onclick: () => {
-          alert("Welt");
-          //bottomNav__home.getDocumentByClassName
-          document.getElementsByClassName("bottomNav__home")[0].className =
-            "bottomNav__home--active";
+          alert("Home");
+          // if (!homeElement) {
+          //   click = document.getElementsByClassName(
+          //     "bottomNav__home"
+          //   )[0].className = "bottomNav__home--active";
+          //   setIconActive(homeElement);
+          // } else {
+          //   setIconInactive(homeElement);
+          // }
         },
       }),
 
@@ -63,4 +68,11 @@ export const bottomNav = () => {
     ],
   });
   return bottomNavElement;
+};
+
+const setIconActive = (status) => {
+  status.className = "bottomNav__home--active";
+};
+const setIconInactive = (status) => {
+  status.className = "bottomNav__home--inactive";
 };
