@@ -1,0 +1,12 @@
+.bottomNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10% 1.5rem 10%;
+  height: 72px;
+  /* background: grey; */
+}
+
+.bottomNav > button {
+  background: none;
+  border: none;
+}
