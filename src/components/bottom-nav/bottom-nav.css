@@ -7,6 +7,22 @@
 }
 
 .bottomNav > button {
-  background: none;
   border: none;
+  background-color: none;
+}
+
+.bottomNav__home--active {
+  background-color: #dedede;
+}
+
+/* .bottomNav__home {
+  background-color: aqua;
+} */
+
+button {
+  background: none;
+}
+
+.bottomNav__home--inactive {
+  background-color: #fff;
 }

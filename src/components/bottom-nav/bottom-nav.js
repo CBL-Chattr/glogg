@@ -28,6 +28,7 @@ export const bottomNav = () => {
     src: smileSrc,
     alt: "smile",
   });
+  let isActive = false;
 
   const bottomNavElement = createElement("div", {
     className: "bottomNav",
@@ -35,6 +36,15 @@ export const bottomNav = () => {
       createElement("button", {
         className: "bottomNav__home",
         children: [homeElement],
+        onclick: () => {
+          //   alert("Home");
+          if (!isActive) {
+            setIconActive(homeElement);
+          } else {
+            setIconInactive(homeElement);
+          }
+          isActive = !isActive;
+        },
       }),
 
       createElement("button", {
@@ -57,4 +67,11 @@ export const bottomNav = () => {
     ],
   });
   return bottomNavElement;
+};
+
+const setIconActive = (status) => {
+  status.className = "bottomNav__home--active";
+};
+const setIconInactive = (status) => {
+  status.className = "bottomNav__home--inactive";
 };
