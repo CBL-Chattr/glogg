@@ -35,6 +35,12 @@ export const bottomNav = () => {
       createElement("button", {
         className: "bottomNav__home",
         children: [homeElement],
+        onclick: () => {
+          alert("Welt");
+          //bottomNav__home.getDocumentByClassName
+          document.getElementsByClassName("bottomNav__home")[0].className =
+            "bottomNav__home--active";
+        },
       }),
 
       createElement("button", {
