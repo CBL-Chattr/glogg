@@ -12,7 +12,7 @@
 }
 
 .bottomNav__home--active {
-  background-color: var(--active-color);
+  background-color: #dedede;
 }
 
 /* .bottomNav__home {

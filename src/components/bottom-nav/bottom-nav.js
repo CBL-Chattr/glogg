@@ -28,6 +28,7 @@ export const bottomNav = () => {
     src: smileSrc,
     alt: "smile",
   });
+  let isActive = false;
 
   const bottomNavElement = createElement("div", {
     className: "bottomNav",
@@ -36,15 +37,13 @@ export const bottomNav = () => {
         className: "bottomNav__home",
         children: [homeElement],
         onclick: () => {
-          alert("Home");
-          // if (!homeElement) {
-          //   click = document.getElementsByClassName(
-          //     "bottomNav__home"
-          //   )[0].className = "bottomNav__home--active";
-          //   setIconActive(homeElement);
-          // } else {
-          //   setIconInactive(homeElement);
-          // }
+          //   alert("Home");
+          if (!isActive) {
+            setIconActive(homeElement);
+          } else {
+            setIconInactive(homeElement);
+          }
+          isActive = !isActive;
         },
       }),
 
