@@ -7,7 +7,7 @@ import addSrc from "../../assets/add.svg";
 
 import "./bottom-nav.css";
 
-export const bottomNav = () => {
+export const createBottomNav = () => {
   const homeElement = createElement("img", {
     src: homeSrc,
     alt: "home",
