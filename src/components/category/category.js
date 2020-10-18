@@ -2,7 +2,7 @@ import "./category.css";
 import "./category.stories.js";
 import { createElement } from "../../utils/element";
 
-export const createCategoryElement = (slider) => {
+export const createCategoryElement = (recipe) => {
   const categoryElement = createElement("div", {
     className: "category",
     children: [
@@ -14,11 +14,11 @@ export const createCategoryElement = (slider) => {
         children: [
           createElement("img", {
             className: "recipe__image",
-            src: slider.imgSrc,
-            alt: `Image of ${slider.recipe}`,
+            src: recipe.imgSrc,
+            alt: `Image of ${recipe.name}`,
           }),
           createElement("p", {
-            innerText: slider.recipe,
+            innerText: recipe.name,
           }),
         ],
       }),
@@ -26,7 +26,3 @@ export const createCategoryElement = (slider) => {
   });
   return categoryElement;
 };
-
-// const createSliderElemnt = () => {
-//   SliderElemnt.src =
-// }
