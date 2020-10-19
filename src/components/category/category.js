@@ -6,9 +6,6 @@ export const createCategoryElement = (recipe) => {
   const categoryElement = createElement("div", {
     className: "category",
     children: [
-      createElement("h3", {
-        innerText: "Breakfast",
-      }),
       createElement("div", {
         className: "slider",
         children: [

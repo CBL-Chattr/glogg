@@ -3,6 +3,7 @@
   height: 400px;
   width: 100%;
   object-fit: contain;
+  background-repeat: no-repeat;
   border-radius: 25px;
   color: white;
   display: flex;
