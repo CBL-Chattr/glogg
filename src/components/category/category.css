@@ -1,0 +1,15 @@
+.recipe__image {
+  height: 166px;
+  width: 166px;
+  border-radius: 20px;
+  margin: 0;
+}
+.slider > p {
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+}
+
+.category > h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
